@@ -31,7 +31,22 @@ const int digiF = 50;
 const int digiG = 52;
 const int digiH = 38;
 
+const int digi1 = 32;
+const int digi2 = 30;
+const int digi3 = 28;
+const int digi4 = 26;
+const int digi5 = 24;
+
+const int out1 = 39;
+const int out2 = 37;
+const int out3 = 35;
+const int out4 = 33;
+const int out5 = 31;
+
 boolean didType = false;
+
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 void setup() { // initialize the buttons' inputs:
   pinMode(digiA, INPUT);
@@ -42,14 +57,36 @@ void setup() { // initialize the buttons' inputs:
   pinMode(digiF, INPUT);
   pinMode(digiG, INPUT);
   pinMode(digiH, INPUT);
+  
+  pinMode(digi1, INPUT);
+  pinMode(digi2, INPUT);
+  pinMode(digi3, INPUT);
+  pinMode(digi4, INPUT);
+  pinMode(digi5, INPUT);
+  
+  pinMode(out1, OUTPUT);
+  pinMode(out2, OUTPUT);
+  pinMode(out3, OUTPUT);
+  pinMode(out4, OUTPUT);
+  pinMode(out5, OUTPUT);
 
   Serial.begin(9600);
   // initialize mouse control:
   Keyboard.begin();
+  
+  // set up the LCD's number of columns and rows: 
+  lcd.begin(16, 2);
+  // Print a message to the LCD.
+  lcd.print("hello, world!");
 }
 
 void loop() 
 {
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.setCursor(0, 1);
+  // print the number of seconds since reset:
+  lcd.print(millis()/1000);
   //start first key
   if (digitalRead(digiA) == LOW) 
   {
@@ -106,6 +143,70 @@ void loop()
     Keyboard.press('H');
     delay(50);
     Keyboard.release('H');
+  }
+  
+  //--------------
+  
+  
+  else if(digitalRead(digi1) == LOW)
+  {
+    delay(100);
+    Keyboard.press('1');
+    delay(50);
+    Keyboard.release('1');
+    digitalWrite(out1, HIGH);
+    digitalWrite(out2, LOW);
+    digitalWrite(out3, LOW);
+    digitalWrite(out4, LOW);
+    digitalWrite(out5, LOW);
+  }
+  else if(digitalRead(digi2) == LOW)
+  {
+    delay(100);
+    Keyboard.press('2');
+    delay(50);
+    Keyboard.release('2');
+    digitalWrite(out1, LOW);
+    digitalWrite(out2, HIGH);
+    digitalWrite(out3, LOW);
+    digitalWrite(out4, LOW);
+    digitalWrite(out5, LOW);
+  }
+  else if(digitalRead(digi3) == LOW)
+  {
+    delay(100);
+    Keyboard.press('3');
+    delay(50);
+    Keyboard.release('3');
+    digitalWrite(out1, LOW);
+    digitalWrite(out2, LOW);
+    digitalWrite(out3, HIGH);
+    digitalWrite(out4, LOW);
+    digitalWrite(out5, LOW);
+  }
+  else if(digitalRead(digi4) == LOW)
+  {
+    delay(100);
+    Keyboard.press('4');
+    delay(50);
+    Keyboard.release('4');
+    digitalWrite(out1, LOW);
+    digitalWrite(out2, LOW);
+    digitalWrite(out3, LOW);
+    digitalWrite(out4, HIGH);
+    digitalWrite(out5, LOW);
+  }
+  else if(digitalRead(digi5) == LOW)
+  {
+    delay(100);
+    Keyboard.press('5');
+    delay(50);
+    Keyboard.release('5');
+    digitalWrite(out1, LOW);
+    digitalWrite(out2, LOW);
+    digitalWrite(out3, LOW);
+    digitalWrite(out4, LOW);
+    digitalWrite(out5, HIGH);
   }
   else
   {

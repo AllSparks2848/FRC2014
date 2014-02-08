@@ -18,7 +18,7 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(30, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() 
 {
-  pinMode(0, INPUT);
+  pinMode(3, INPUT);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off' 
 }
@@ -26,7 +26,7 @@ void setup()
 void loop() 
 {
   // start actual LED logic below
-  if(digitalRead(0)==LOW)
+  if(digitalRead(3)==LOW)
   {
     for(int i = 15; i>=0; i--)
     {
