@@ -67,79 +67,68 @@ void loop()
   //start first key
   if (digitalRead(digiA) == LOW) 
   {
-    delay(100);
     Keyboard.press('A');
-    delay(50);
+    delay(10);
     Keyboard.release('A');
   } 
   else if(digitalRead(digiB) == LOW)
   {
-    delay(100);
     Keyboard.press('B');
-    delay(50);
+    delay(10);
     Keyboard.release('B');
   }
   else if(digitalRead(digiC) == LOW)
   {
-    delay(100);
     Keyboard.press('C');
-    delay(50);
+    delay(10);
     Keyboard.release('C');
   }
   else if(digitalRead(digiD) == LOW)
   {
-    delay(100);
     Keyboard.press('D');
-    delay(50);
+    delay(10);
     Keyboard.release('D');
   }
   else if(digitalRead(digiE) == LOW)
   {
-    delay(100);
     Keyboard.press('E');
-    delay(50);
+    delay(10);
     Keyboard.release('E');
   }
   else if(digitalRead(digiF) == LOW)
   {
-    delay(100);
     Keyboard.press('F');
-    delay(50);
+    delay(10);
     Keyboard.release('F');
   }
   else if(digitalRead(digiG) == LOW)
   {
-    delay(100);
     Keyboard.press('G');
-    delay(50);
+    delay(10);
     Keyboard.release('G');
   }
   else if(digitalRead(digiH) == LOW)
   {
-    delay(100);
     Keyboard.press('H');
-    delay(50);
+    delay(10);
     Keyboard.release('H');
   }
   else if(digitalRead(digiI) == LOW)
   {
-    delay(100);
     Keyboard.press('I');
-    delay(50);
+    delay(10);
     Keyboard.release('I');
   }
     else if(digitalRead(digiJ) == LOW)
   {
-    delay(100);
     Keyboard.press('J');
-    delay(50);
+    delay(10);
     Keyboard.release('J');
   }
     else if(digitalRead(digiK) == LOW)
   {
-    delay(100);
     Keyboard.press('K');
-    delay(50);
+    delay(10);
     Keyboard.release('K');
   }
   
