@@ -128,6 +128,8 @@ DirectoryIndex index.htm
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="LowGearAuton.vi" Type="VI" URL="../../Utilities/LowGearAuton.vi"/>
+		<Item Name="HighGearAuton.vi" Type="VI" URL="../../Utilities/HighGearAuton.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
