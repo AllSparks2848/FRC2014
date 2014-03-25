@@ -659,6 +659,10 @@ DirectoryIndex index.htm
 			<Item Name="TwoBallAuton.vi" Type="VI" URL="../../Utilities/TwoBallAuton.vi"/>
 			<Item Name="DriveForwardAuton.vi" Type="VI" URL="../../Utilities/DriveForwardAuton.vi"/>
 			<Item Name="OneBallAuton.vi" Type="VI" URL="../../Utilities/OneBallAuton.vi"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="RampAcceleration.vi" Type="VI" URL="../../Utilities/RampAcceleration.vi"/>
 		</Item>
